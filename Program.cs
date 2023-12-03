@@ -14,9 +14,21 @@ namespace ProjetoMars
     {
 
         public static Conect conn = new Conect("localhost", "crmzapex", "root", "");
-        public static string UsuarioLogado;
-        public static string Email;
 
+        public static string UsuarioLogado;
+
+        public static string Email;
+        
+        public static string codCLient;
+
+        public static string fantaisa;
+
+        public static string cnpj;
+
+        public static string vendedor;
+
+        public static string codAtendi;
+                
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>

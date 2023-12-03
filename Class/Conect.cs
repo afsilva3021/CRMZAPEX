@@ -151,7 +151,7 @@ namespace ProjetoMars
                     {
                         return true;
                     }
-                    msgErro = "Erro na exclusão de dados";
+  
                 }
                 return false;
             }
@@ -171,7 +171,7 @@ namespace ProjetoMars
                     objDadosEmMemoria = new MySqlDataAdapter(comandoSql, objconect);
                     DataTable tabelaDeDados = new DataTable();
                     objDadosEmMemoria.Fill(tabelaDeDados);
-                    if(tabelaDeDados.Rows.Count >= 0)
+                    if(tabelaDeDados.Rows.Count > 0)
                     {
                         return tabelaDeDados;
                     }

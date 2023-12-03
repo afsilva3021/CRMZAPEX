@@ -37,7 +37,6 @@
             this.txtConfirmaSenha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.bntConfirma = new System.Windows.Forms.Button();
-            this.btnFechar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -119,26 +118,16 @@
             // 
             // bntConfirma
             // 
+            this.bntConfirma.Image = ((System.Drawing.Image)(resources.GetObject("bntConfirma.Image")));
+            this.bntConfirma.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bntConfirma.Location = new System.Drawing.Point(327, 240);
             this.bntConfirma.Name = "bntConfirma";
-            this.bntConfirma.Size = new System.Drawing.Size(91, 36);
+            this.bntConfirma.Size = new System.Drawing.Size(77, 36);
             this.bntConfirma.TabIndex = 7;
             this.bntConfirma.Text = "Salvar";
+            this.bntConfirma.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bntConfirma.UseVisualStyleBackColor = true;
             this.bntConfirma.Click += new System.EventHandler(this.bntConfirma_Click);
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFechar.BackgroundImage")));
-            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnFechar.FlatAppearance.BorderSize = 0;
-            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Location = new System.Drawing.Point(417, 2);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(35, 33);
-            this.btnFechar.TabIndex = 8;
-            this.btnFechar.UseVisualStyleBackColor = true;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // AlteraSenha
             // 
@@ -146,7 +135,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(452, 314);
-            this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.bntConfirma);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtConfirmaSenha);
@@ -155,7 +143,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "AlteraSenha";
             this.Text = "AlteraSenha";
             this.ResumeLayout(false);
@@ -172,7 +160,6 @@
         private System.Windows.Forms.TextBox txtConfirmaSenha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button bntConfirma;
-        private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.TextBox txtSenhaNova;
     }
 }

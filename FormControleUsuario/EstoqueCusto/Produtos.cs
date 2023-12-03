@@ -22,13 +22,13 @@ namespace ProjetoMars.FormControleUsuario.Estoque_e_custo
             string cmdSql = "SELECT D0_COD AS CODIGO, D0_REFENC AS REFERENCIA, D0_FORNEC AS FORNECEDOR, D0_MARCA AS MARCA, D0_CUSTO AS CUSTO, D0_VEND AS VENDA, D0_DESCONTO AS DESCONTO, D0_DESC AS DESCRICAO FROM PD0010";
             var dados = Program.conn.SELECT(cmdSql);
 
-            if (dados.Rows.Count >= 0)
-            {
                 dataGridView1.DataSource = dados;
-                dataGridView1.BackgroundColor = Color.Silver;
-                dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
 
-            }
+                dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 12);
+
+                dataGridView1.BackgroundColor = Color.Silver;
+            
+                dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
         }
 
         private void Produtos_load(object sender, EventArgs e)

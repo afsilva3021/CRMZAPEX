@@ -35,7 +35,10 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelCampos = new System.Windows.Forms.Panel();
+            this.txtCod = new System.Windows.Forms.TextBox();
+            this.lblCodigo = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cBStatu = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -68,19 +71,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.panelButton = new System.Windows.Forms.Panel();
-            this.btnDeletar = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnConsultaItens = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtCod = new System.Windows.Forms.TextBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelCampos.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelButton.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -161,13 +161,22 @@
             this.panel2.Size = new System.Drawing.Size(1629, 837);
             this.panel2.TabIndex = 1;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 415);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1625, 304);
+            this.dataGridView1.TabIndex = 3;
+            // 
             // panelCampos
             // 
             this.panelCampos.AutoScroll = true;
             this.panelCampos.BackColor = System.Drawing.SystemColors.Window;
             this.panelCampos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelCampos.Controls.Add(this.lblCodigo);
             this.panelCampos.Controls.Add(this.txtCod);
+            this.panelCampos.Controls.Add(this.lblCodigo);
             this.panelCampos.Controls.Add(this.label9);
             this.panelCampos.Controls.Add(this.cBStatu);
             this.panelCampos.Controls.Add(this.label8);
@@ -201,6 +210,25 @@
             this.panelCampos.Name = "panelCampos";
             this.panelCampos.Size = new System.Drawing.Size(1625, 415);
             this.panelCampos.TabIndex = 0;
+            // 
+            // txtCod
+            // 
+            this.txtCod.Enabled = false;
+            this.txtCod.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.txtCod.Location = new System.Drawing.Point(42, 49);
+            this.txtCod.Name = "txtCod";
+            this.txtCod.Size = new System.Drawing.Size(204, 31);
+            this.txtCod.TabIndex = 49;
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblCodigo.Location = new System.Drawing.Point(53, 15);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(90, 21);
+            this.lblCodigo.TabIndex = 48;
+            this.lblCodigo.Text = "Num Atend";
             // 
             // label9
             // 
@@ -439,6 +467,7 @@
             // 
             // txtCNPJ
             // 
+            this.txtCNPJ.Enabled = false;
             this.txtCNPJ.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.txtCNPJ.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtCNPJ.Location = new System.Drawing.Point(1094, 38);
@@ -451,6 +480,7 @@
             // txtNomeFantasia
             // 
             this.txtNomeFantasia.BackColor = System.Drawing.SystemColors.Control;
+            this.txtNomeFantasia.Enabled = false;
             this.txtNomeFantasia.Font = new System.Drawing.Font("Segoe UI", 13F);
             this.txtNomeFantasia.Location = new System.Drawing.Point(601, 38);
             this.txtNomeFantasia.Name = "txtNomeFantasia";
@@ -473,11 +503,12 @@
             this.btnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.BackgroundImage")));
             this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.Location = new System.Drawing.Point(295, 37);
+            this.btnBuscar.Location = new System.Drawing.Point(321, 38);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(32, 32);
             this.btnBuscar.TabIndex = 12;
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtCodClient
             // 
@@ -486,6 +517,7 @@
             this.txtCodClient.Name = "txtCodClient";
             this.txtCodClient.Size = new System.Drawing.Size(235, 31);
             this.txtCodClient.TabIndex = 11;
+            this.txtCodClient.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblClient
             // 
@@ -540,21 +572,6 @@
             this.panelButton.Size = new System.Drawing.Size(1625, 54);
             this.panelButton.TabIndex = 1;
             // 
-            // btnDeletar
-            // 
-            this.btnDeletar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(247)))));
-            this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeletar.FlatAppearance.BorderSize = 0;
-            this.btnDeletar.Font = new System.Drawing.Font("Segoe UI Black", 10F);
-            this.btnDeletar.ForeColor = System.Drawing.Color.White;
-            this.btnDeletar.Location = new System.Drawing.Point(393, 6);
-            this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnDeletar.Size = new System.Drawing.Size(137, 43);
-            this.btnDeletar.TabIndex = 2;
-            this.btnDeletar.Text = "Delete";
-            this.btnDeletar.UseVisualStyleBackColor = false;
-            // 
             // btnAlterar
             // 
             this.btnAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(247)))));
@@ -584,35 +601,20 @@
             this.btnConsultaItens.UseVisualStyleBackColor = false;
             this.btnConsultaItens.Click += new System.EventHandler(this.btnConsultaItens_Click);
             // 
-            // dataGridView1
+            // btnDeletar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 415);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1625, 304);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // txtCod
-            // 
-            this.txtCod.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtCod.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtCod.Location = new System.Drawing.Point(42, 40);
-            this.txtCod.MaxLength = 14;
-            this.txtCod.Name = "txtCod";
-            this.txtCod.ReadOnly = true;
-            this.txtCod.Size = new System.Drawing.Size(192, 29);
-            this.txtCod.TabIndex = 47;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblCodigo.Location = new System.Drawing.Point(53, 15);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(90, 21);
-            this.lblCodigo.TabIndex = 48;
-            this.lblCodigo.Text = "Num Atend";
+            this.btnDeletar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(247)))));
+            this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDeletar.FlatAppearance.BorderSize = 0;
+            this.btnDeletar.Font = new System.Drawing.Font("Segoe UI Black", 10F);
+            this.btnDeletar.ForeColor = System.Drawing.Color.White;
+            this.btnDeletar.Location = new System.Drawing.Point(393, 6);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnDeletar.Size = new System.Drawing.Size(137, 43);
+            this.btnDeletar.TabIndex = 2;
+            this.btnDeletar.Text = "Delete";
+            this.btnDeletar.UseVisualStyleBackColor = false;
             // 
             // atendimento
             // 
@@ -626,16 +628,17 @@
             this.Name = "atendimento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "atendimento";
+            this.Load += new System.EventHandler(this.atendimento_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelCampos.ResumeLayout(false);
             this.panelCampos.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panelButton.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -673,7 +676,6 @@
         private System.Windows.Forms.Button btnConsultaItens;
         private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTotal;
@@ -687,5 +689,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.TextBox txtCod;
+        private System.Windows.Forms.Button btnDeletar;
     }
 }

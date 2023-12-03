@@ -1,4 +1,5 @@
-﻿using ServiceStack;
+﻿using Google.Protobuf.WellKnownTypes;
+using ServiceStack;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,9 +20,60 @@ namespace ProjetoMars.FormControleUsuario.CallCenter.Cliente
             InitializeComponent();
         }
 
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            bool formValidado;
 
+            if (txbCNPJ.Text == null)
+            {
+                formValidado = false;
+            }
+            else if (cbPessoa.Text == null)
+            {
+                formValidado = false;
+            }
+            else if (cbUf.Text == null)
+            {
+                formValidado = false;
+            }
+            else if (txbNome.Text == null)
+            {
+                formValidado = false;
+            }
+            else if (txbInscre.Text == null)
+            {
+                formValidado = false;
+            }
+            else if (txbCidade.Text == null)
+            {
+                formValidado = false;
+            }
+            else if (txbCep.Text == null)
+            {
+                formValidado = false;
+            }
+            else
+            {
+                formValidado = true;
+            }
+
+
+
+
+            if (formValidado)
+            {
+                grava();
+            }
+            else
+            {
+                MessageBox.Show("Campos nao preenchidos Favor preencher os campos com *");
+            }
+
+        }
+
+        public void grava()
+        {
             Program.conn.INSERT("START TRANSACTION;");
 
             var cmdSql = $"CALL CadCliente('{txbCod.Text}','{txbCNPJ.Text}','{cbPessoa.Text}','{cbUf.Text}','{cBFrete.Text}'," +
@@ -45,7 +97,6 @@ namespace ProjetoMars.FormControleUsuario.CallCenter.Cliente
                 Close();
             }
         }
-      
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -60,7 +111,7 @@ namespace ProjetoMars.FormControleUsuario.CallCenter.Cliente
 
         private int codCliente()
         {
-            // Substitua esta função pela sua lógica desejada
+           
             Random random = new Random();
             return random.Next(1, 1000);
         }

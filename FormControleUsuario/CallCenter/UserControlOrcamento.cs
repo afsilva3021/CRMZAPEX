@@ -58,15 +58,13 @@ namespace ProjetoMars.FormControleUsuario.CallCenter
             string cmdSql = "SELECT T0_COD AS NUMERO, T0_CLIENT AS CLIENTE, T0_FANTASIA AS Nome_Fantasia, T0_SITUA AS Situação, T0_ENTREGA AS Entrega, T0_VENDEDOR AS Vendedor, T0_CONDPAG AS Cond_Pagamento, T0_TIPOFRETE AS Tipo_Frete, T0_VALORFRETE as Valor_Frete, T0_NUMPEDCLIENT as N_PEdido_Client  FROM XT0010";
             var dados = Program.conn.SELECT(cmdSql);
 
-            if (dados.Rows.Count > 0)
-            {
-
                 dataGridView1.DataSource = dados;
-                dataGridView1.BackgroundColor = Color.Silver;
-                dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
 
-               
-            }
+                dataGridView1.DefaultCellStyle.Font = new Font("Tahoma", 12);
+
+                dataGridView1.BackgroundColor = Color.Silver;
+            
+                dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
         }
 
         private void btnIncluir_Click_1(object sender, EventArgs e)

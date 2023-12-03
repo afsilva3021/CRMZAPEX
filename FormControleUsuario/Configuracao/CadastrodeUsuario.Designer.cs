@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrodeUsuario));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnDeletar = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,7 +58,9 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -65,6 +70,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btnDeletar);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -87,11 +93,52 @@
             this.panel1.Controls.Add(this.lblCodigo);
             this.panel1.Controls.Add(this.txtCodigo);
             this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(926, 565);
             this.panel1.TabIndex = 0;
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
+            this.btnAlterar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAlterar.Location = new System.Drawing.Point(134, 8);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(89, 38);
+            this.btnAlterar.TabIndex = 2;
+            this.btnAlterar.Text = "Alterar";
+            this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
+            // btnDeletar
+            // 
+            this.btnDeletar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletar.Image")));
+            this.btnDeletar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeletar.Location = new System.Drawing.Point(819, 345);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(89, 38);
+            this.btnDeletar.TabIndex = 28;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.checkBox1.Location = new System.Drawing.Point(272, 357);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(173, 17);
+            this.checkBox1.TabIndex = 23;
+            this.checkBox1.Text = "Altera a senha no proximo login";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -127,18 +174,16 @@
             // 
             this.txtCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCargo.Location = new System.Drawing.Point(403, 278);
-            this.txtCargo.Multiline = true;
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(314, 26);
+            this.txtCargo.Size = new System.Drawing.Size(314, 23);
             this.txtCargo.TabIndex = 19;
             // 
             // txtDepartamento
             // 
             this.txtDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDepartamento.Location = new System.Drawing.Point(27, 278);
-            this.txtDepartamento.Multiline = true;
             this.txtDepartamento.Name = "txtDepartamento";
-            this.txtDepartamento.Size = new System.Drawing.Size(315, 26);
+            this.txtDepartamento.Size = new System.Drawing.Size(315, 23);
             this.txtDepartamento.TabIndex = 18;
             // 
             // label2
@@ -215,10 +260,9 @@
             this.txtConfSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfSenha.Location = new System.Drawing.Point(404, 189);
             this.txtConfSenha.MaxLength = 14;
-            this.txtConfSenha.Multiline = true;
             this.txtConfSenha.Name = "txtConfSenha";
             this.txtConfSenha.PasswordChar = '*';
-            this.txtConfSenha.Size = new System.Drawing.Size(314, 29);
+            this.txtConfSenha.Size = new System.Drawing.Size(314, 23);
             this.txtConfSenha.TabIndex = 11;
             // 
             // lblSenha
@@ -236,10 +280,9 @@
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(28, 189);
             this.txtSenha.MaxLength = 14;
-            this.txtSenha.Multiline = true;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(314, 29);
+            this.txtSenha.Size = new System.Drawing.Size(314, 23);
             this.txtSenha.TabIndex = 9;
             // 
             // lblEmail
@@ -256,9 +299,8 @@
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(614, 108);
-            this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(300, 26);
+            this.txtEmail.Size = new System.Drawing.Size(300, 23);
             this.txtEmail.TabIndex = 7;
             // 
             // lblNome
@@ -275,9 +317,8 @@
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(256, 108);
-            this.txtNome.Multiline = true;
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(320, 26);
+            this.txtNome.Size = new System.Drawing.Size(320, 23);
             this.txtNome.TabIndex = 5;
             // 
             // lblCodigo
@@ -294,9 +335,8 @@
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.Location = new System.Drawing.Point(30, 108);
-            this.txtCodigo.Multiline = true;
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(167, 26);
+            this.txtCodigo.Size = new System.Drawing.Size(167, 23);
             this.txtCodigo.TabIndex = 3;
             // 
             // panel3
@@ -312,19 +352,20 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnAlterar);
             this.panel2.Controls.Add(this.btnCancelar);
             this.panel2.Controls.Add(this.btnSalvar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(660, 0);
+            this.panel2.Location = new System.Drawing.Point(570, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(264, 55);
+            this.panel2.Size = new System.Drawing.Size(354, 55);
             this.panel2.TabIndex = 1;
             // 
             // btnCancelar
             // 
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(160, 8);
+            this.btnCancelar.Location = new System.Drawing.Point(257, 9);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(89, 38);
             this.btnCancelar.TabIndex = 1;
@@ -338,7 +379,7 @@
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalvar.Location = new System.Drawing.Point(33, 8);
+            this.btnSalvar.Location = new System.Drawing.Point(19, 7);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(89, 38);
             this.btnSalvar.TabIndex = 0;
@@ -358,17 +399,38 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Configurador";
             // 
-            // checkBox1
+            // label6
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBox1.Location = new System.Drawing.Point(272, 357);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(173, 17);
-            this.checkBox1.TabIndex = 23;
-            this.checkBox1.Text = "Altera a senha no proximo login";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(73, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 24);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "*";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(292, 80);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(17, 24);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "*";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(70, 162);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(17, 24);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "*";
             // 
             // CadastrodeUsuario
             // 
@@ -417,5 +479,10 @@
         private System.Windows.Forms.TextBox txtDepartamento;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnDeletar;
+        private System.Windows.Forms.Button btnAlterar;
     }
 }

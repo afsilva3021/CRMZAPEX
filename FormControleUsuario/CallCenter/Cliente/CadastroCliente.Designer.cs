@@ -36,10 +36,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
             this.btnConsulta = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.txbNum = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.lblCelular = new System.Windows.Forms.Label();
             this.txbCelular = new System.Windows.Forms.TextBox();
             this.lblDate = new System.Windows.Forms.Label();
@@ -62,16 +62,12 @@
             this.txbSite = new System.Windows.Forms.TextBox();
             this.txbCelCob = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txbNumCob = new System.Windows.Forms.TextBox();
             this.txbBairroCobranca = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.lblCidadeCobranca = new System.Windows.Forms.Label();
             this.txbCidCobr = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.txbTelCobre = new System.Windows.Forms.TextBox();
             this.txbCodVend = new System.Windows.Forms.TextBox();
             this.lblVendedor = new System.Windows.Forms.Label();
@@ -86,11 +82,7 @@
             this.txbEndCobr = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
             this.lblTelefone = new System.Windows.Forms.Label();
             this.txbTelefone = new System.Windows.Forms.TextBox();
             this.lblFantasia = new System.Windows.Forms.Label();
@@ -114,14 +106,13 @@
             this.txbComplemento = new System.Windows.Forms.TextBox();
             this.lblCodCliente = new System.Windows.Forms.Label();
             this.txbCod = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -240,10 +231,10 @@
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.SystemColors.Window;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.btnConsulta);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.txbNum);
-            this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.lblCelular);
             this.panel2.Controls.Add(this.txbCelular);
             this.panel2.Controls.Add(this.lblDate);
@@ -281,26 +272,37 @@
             this.panel2.Controls.Add(this.txbComplemento);
             this.panel2.Controls.Add(this.lblCodCliente);
             this.panel2.Controls.Add(this.txbCod);
-            this.panel2.Controls.Add(this.label24);
             this.panel2.Controls.Add(this.label33);
             this.panel2.Controls.Add(this.label34);
             this.panel2.Controls.Add(this.label35);
-            this.panel2.Controls.Add(this.label37);
             this.panel2.Controls.Add(this.label36);
             this.panel2.Controls.Add(this.label38);
             this.panel2.Controls.Add(this.label45);
+            this.panel2.Controls.Add(this.label22);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1476, 751);
             this.panel2.TabIndex = 20;
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Red;
+            this.label19.Location = new System.Drawing.Point(118, 151);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(20, 25);
+            this.label19.TabIndex = 61;
+            this.label19.Text = "*";
+            // 
             // btnConsulta
             // 
             this.btnConsulta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConsulta.BackgroundImage")));
             this.btnConsulta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnConsulta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConsulta.Location = new System.Drawing.Point(198, 259);
+            this.btnConsulta.Location = new System.Drawing.Point(197, 242);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(36, 34);
             this.btnConsulta.TabIndex = 60;
@@ -325,23 +327,11 @@
             this.txbNum.Size = new System.Drawing.Size(82, 26);
             this.txbNum.TabIndex = 57;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(731, 152);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(20, 25);
-            this.label15.TabIndex = 59;
-            this.label15.Text = "*";
-            // 
             // lblCelular
             // 
             this.lblCelular.AutoSize = true;
             this.lblCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCelular.Location = new System.Drawing.Point(968, 242);
+            this.lblCelular.Location = new System.Drawing.Point(965, 229);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(58, 20);
             this.lblCelular.TabIndex = 56;
@@ -350,7 +340,7 @@
             // txbCelular
             // 
             this.txbCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbCelular.Location = new System.Drawing.Point(958, 265);
+            this.txbCelular.Location = new System.Drawing.Point(955, 252);
             this.txbCelular.Name = "txbCelular";
             this.txbCelular.Size = new System.Drawing.Size(238, 26);
             this.txbCelular.TabIndex = 55;
@@ -359,7 +349,7 @@
             // 
             this.lblDate.AutoSize = true;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblDate.Location = new System.Drawing.Point(1264, 242);
+            this.lblDate.Location = new System.Drawing.Point(1261, 229);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(131, 20);
             this.lblDate.TabIndex = 54;
@@ -372,7 +362,7 @@
             this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(1259, 265);
+            this.dateTimePicker1.Location = new System.Drawing.Point(1256, 252);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(152, 27);
             this.dateTimePicker1.TabIndex = 53;
@@ -412,7 +402,7 @@
             // 
             this.lblCep.AutoSize = true;
             this.lblCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCep.Location = new System.Drawing.Point(35, 242);
+            this.lblCep.Location = new System.Drawing.Point(33, 221);
             this.lblCep.Name = "lblCep";
             this.lblCep.Size = new System.Drawing.Size(41, 20);
             this.lblCep.TabIndex = 48;
@@ -421,10 +411,10 @@
             // txbCep
             // 
             this.txbCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbCep.Location = new System.Drawing.Point(27, 259);
+            this.txbCep.Location = new System.Drawing.Point(26, 244);
             this.txbCep.Multiline = true;
             this.txbCep.Name = "txbCep";
-            this.txbCep.Size = new System.Drawing.Size(207, 32);
+            this.txbCep.Size = new System.Drawing.Size(207, 34);
             this.txbCep.TabIndex = 47;
             // 
             // label47
@@ -433,7 +423,7 @@
             this.label47.BackColor = System.Drawing.Color.Transparent;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.ForeColor = System.Drawing.Color.Red;
-            this.label47.Location = new System.Drawing.Point(71, 237);
+            this.label47.Location = new System.Drawing.Point(69, 216);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(20, 25);
             this.label47.TabIndex = 49;
@@ -478,16 +468,12 @@
             this.panel3.Controls.Add(this.txbSite);
             this.panel3.Controls.Add(this.txbCelCob);
             this.panel3.Controls.Add(this.label20);
-            this.panel3.Controls.Add(this.label21);
             this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.txbNumCob);
             this.panel3.Controls.Add(this.txbBairroCobranca);
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.lblCidadeCobranca);
             this.panel3.Controls.Add(this.txbCidCobr);
-            this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.txbTelCobre);
             this.panel3.Controls.Add(this.txbCodVend);
             this.panel3.Controls.Add(this.lblVendedor);
@@ -501,11 +487,7 @@
             this.panel3.Controls.Add(this.lblEndCobranca);
             this.panel3.Controls.Add(this.txbEndCobr);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.label39);
-            this.panel3.Controls.Add(this.label40);
             this.panel3.Controls.Add(this.label41);
-            this.panel3.Controls.Add(this.label42);
-            this.panel3.Controls.Add(this.label43);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(0, 299);
@@ -557,7 +539,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(667, 240);
+            this.label18.Location = new System.Drawing.Point(650, 240);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(37, 20);
             this.label18.TabIndex = 70;
@@ -565,7 +547,7 @@
             // 
             // txbSite
             // 
-            this.txbSite.Location = new System.Drawing.Point(654, 263);
+            this.txbSite.Location = new System.Drawing.Point(649, 263);
             this.txbSite.Name = "txbSite";
             this.txbSite.Size = new System.Drawing.Size(385, 26);
             this.txbSite.TabIndex = 69;
@@ -586,18 +568,6 @@
             this.label20.Size = new System.Drawing.Size(105, 20);
             this.label20.TabIndex = 66;
             this.label20.Text = "Cel/Cobrança";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(467, 230);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(20, 25);
-            this.label21.TabIndex = 68;
-            this.label21.Text = "*";
             // 
             // label16
             // 
@@ -634,30 +604,6 @@
             this.txbBairroCobranca.Size = new System.Drawing.Size(372, 26);
             this.txbBairroCobranca.TabIndex = 59;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(515, 58);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(20, 25);
-            this.label17.TabIndex = 65;
-            this.label17.Text = "*";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(797, 57);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(20, 25);
-            this.label12.TabIndex = 61;
-            this.label12.Text = "*";
-            // 
             // lblCidadeCobranca
             // 
             this.lblCidadeCobranca.AutoSize = true;
@@ -675,18 +621,6 @@
             this.txbCidCobr.Name = "txbCidCobr";
             this.txbCidCobr.Size = new System.Drawing.Size(289, 26);
             this.txbCidCobr.TabIndex = 56;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(76, 145);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(20, 25);
-            this.label11.TabIndex = 58;
-            this.label11.Text = "*";
             // 
             // txbTelCobre
             // 
@@ -818,30 +752,6 @@
             this.label25.TabIndex = 0;
             this.label25.Text = "ADM/FIN";
             // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.Red;
-            this.label39.Location = new System.Drawing.Point(133, 57);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(20, 25);
-            this.label39.TabIndex = 51;
-            this.label39.Text = "*";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.Red;
-            this.label40.Location = new System.Drawing.Point(1193, 57);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(20, 25);
-            this.label40.TabIndex = 52;
-            this.label40.Text = "*";
-            // 
             // label41
             // 
             this.label41.AutoSize = true;
@@ -854,35 +764,11 @@
             this.label41.TabIndex = 53;
             this.label41.Text = "*";
             // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.Red;
-            this.label42.Location = new System.Drawing.Point(795, 138);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(20, 25);
-            this.label42.TabIndex = 54;
-            this.label42.Text = "*";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.BackColor = System.Drawing.Color.Transparent;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.Red;
-            this.label43.Location = new System.Drawing.Point(138, 230);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(20, 25);
-            this.label43.TabIndex = 55;
-            this.label43.Text = "*";
-            // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(672, 244);
+            this.lblTelefone.Location = new System.Drawing.Point(669, 231);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(71, 20);
             this.lblTelefone.TabIndex = 35;
@@ -891,7 +777,7 @@
             // txbTelefone
             // 
             this.txbTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTelefone.Location = new System.Drawing.Point(662, 267);
+            this.txbTelefone.Location = new System.Drawing.Point(659, 254);
             this.txbTelefone.Name = "txbTelefone";
             this.txbTelefone.Size = new System.Drawing.Size(245, 26);
             this.txbTelefone.TabIndex = 34;
@@ -1070,7 +956,7 @@
             // 
             this.lblComplemento.AutoSize = true;
             this.lblComplemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblComplemento.Location = new System.Drawing.Point(345, 242);
+            this.lblComplemento.Location = new System.Drawing.Point(342, 229);
             this.lblComplemento.Name = "lblComplemento";
             this.lblComplemento.Size = new System.Drawing.Size(108, 20);
             this.lblComplemento.TabIndex = 7;
@@ -1079,7 +965,7 @@
             // txbComplemento
             // 
             this.txbComplemento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbComplemento.Location = new System.Drawing.Point(335, 265);
+            this.txbComplemento.Location = new System.Drawing.Point(332, 252);
             this.txbComplemento.Name = "txbComplemento";
             this.txbComplemento.Size = new System.Drawing.Size(253, 26);
             this.txbComplemento.TabIndex = 6;
@@ -1102,18 +988,6 @@
             this.txbCod.Name = "txbCod";
             this.txbCod.Size = new System.Drawing.Size(211, 26);
             this.txbCod.TabIndex = 4;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.Transparent;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Red;
-            this.label24.Location = new System.Drawing.Point(112, 10);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(20, 25);
-            this.label24.TabIndex = 37;
-            this.label24.Text = "*";
             // 
             // label33
             // 
@@ -1151,18 +1025,6 @@
             this.label35.TabIndex = 40;
             this.label35.Text = "*";
             // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.Color.Transparent;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.Red;
-            this.label37.Location = new System.Drawing.Point(848, 157);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(20, 25);
-            this.label37.TabIndex = 42;
-            this.label37.Text = "*";
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -1198,6 +1060,18 @@
             this.label45.Size = new System.Drawing.Size(20, 25);
             this.label45.TabIndex = 46;
             this.label45.Text = "*";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Red;
+            this.label22.Location = new System.Drawing.Point(76, 78);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(20, 25);
+            this.label22.TabIndex = 62;
+            this.label22.Text = "*";
             // 
             // label9
             // 
@@ -1432,18 +1306,12 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label lblEndereco;
         private System.Windows.Forms.TextBox txbEndereco;
         private System.Windows.Forms.Label label45;
@@ -1453,10 +1321,8 @@
         private System.Windows.Forms.Label lblPessoa;
         private System.Windows.Forms.Label lblCidadeCobranca;
         private System.Windows.Forms.TextBox txbCidCobr;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txbBairroCobranca;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lblInscricao;
         private System.Windows.Forms.TextBox txbInscre;
         private System.Windows.Forms.Label label14;
@@ -1464,21 +1330,20 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txbNum;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.TextBox txbCelular;
         private System.Windows.Forms.TextBox txbCelCob;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txbNumCob;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnvend;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txbSite;
         private System.Windows.Forms.Label lblNatureza;
         private System.Windows.Forms.TextBox txbNatureza;
         private System.Windows.Forms.Button btnConsulta;
         private System.Windows.Forms.Button btnConfCep;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txbSite;
     }
 }

@@ -168,9 +168,9 @@ namespace ProjetoMars
 
             if (resultado == DialogResult.OK)
             {
-                Application.Exit(); // Fecha o aplicativo
+                Application.Exit();
             }
-            // Se o usuário clicar em "Cancelar", nada acontece.
+            
         }
 
         private void btnHome_Click(object sender, EventArgs e)

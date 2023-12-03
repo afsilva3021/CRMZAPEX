@@ -21,6 +21,7 @@ namespace ProjetoMars.FormControleUsuario.Configuracao
             InitializeComponent();
         }
 
+        
         private void bntConfirma_Click(object sender, EventArgs e)
         {
             Novasenha();
@@ -41,7 +42,7 @@ namespace ProjetoMars.FormControleUsuario.Configuracao
 
             if (senhaAntiga == senhaAntiga && senhaNova == confirma)
             {
-                string grava = $"UPDATE SYS_USR SET USR_PWD = '{Global.Encrypt.HashString(senhaNova)}', USR_ALT = '1' WHERE USR_NOME = '{Program.UsuarioLogado}'";
+                string grava = $"UPDATE SYS_USR SET USR_PWD = '{Global.Encrypt.HashString(senhaNova)}', USR_ALT = 'False' WHERE USR_NOME = '{Program.UsuarioLogado}'";
                 if (!Program.conn.UPDATE(grava))
                 {
                     MessageBox.Show("Dados estao Encorretos favor digitar novamente");

@@ -187,6 +187,12 @@
     <Compile Include="FormControleUsuario\CallCenter\Cliente\CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormControleUsuario\CallCenter\Orcamento\adicionarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControleUsuario\CallCenter\Orcamento\adicionarProduto.Designer.cs">
+      <DependentUpon>adicionarProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormControleUsuario\CallCenter\Orcamento\atendimento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,6 +286,9 @@
     </Compile>
     <EmbeddedResource Include="FormControleUsuario\CallCenter\Cliente\CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormControleUsuario\CallCenter\Orcamento\adicionarProduto.resx">
+      <DependentUpon>adicionarProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormControleUsuario\CallCenter\Orcamento\atendimento.resx">
       <DependentUpon>atendimento.cs</DependentUpon>

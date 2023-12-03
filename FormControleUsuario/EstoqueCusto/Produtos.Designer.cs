@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Produtos));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.GridStatu = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pnButons = new System.Windows.Forms.Panel();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -46,8 +46,8 @@
             this.btnBusca = new System.Windows.Forms.Button();
             this.txbPesquisa = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnButons.SuspendLayout();
             this.pnNavbar.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -62,9 +62,21 @@
             this.panel1.Size = new System.Drawing.Size(1195, 849);
             this.panel1.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.pnButons);
+            this.panel2.Controls.Add(this.pnNavbar);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1195, 849);
+            this.panel2.TabIndex = 1;
+            // 
             // dataGridView1
             // 
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -80,17 +92,6 @@
             this.GridStatu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GridStatu.HeaderText = "Status";
             this.GridStatu.Name = "GridStatu";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.pnButons);
-            this.panel2.Controls.Add(this.pnNavbar);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1195, 849);
-            this.panel2.TabIndex = 1;
             // 
             // pnButons
             // 
@@ -256,8 +257,8 @@
             this.Size = new System.Drawing.Size(1195, 849);
             this.Load += new System.EventHandler(this.Produtos_load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnButons.ResumeLayout(false);
             this.pnNavbar.ResumeLayout(false);
             this.pnNavbar.PerformLayout();

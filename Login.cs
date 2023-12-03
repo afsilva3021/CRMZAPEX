@@ -50,15 +50,21 @@ namespace ProjetoMars
             if (dados != null)
             {
                 DataRow dadosLogin = dados.Rows[0];
+
                 DataRow alteraSenha = dados.Rows[0];
+
                 string senhaUSR = dadosLogin["USR_PWD"].ToString();
+
                 var alterar = alteraSenha["USR_ALT"].ToString();
+
                 if (senhaUSR == Encrypt.HashString(textBoxSenha.Text))
                 {
+
                    Program.UsuarioLogado = dadosLogin["USR_NOME"].ToString();
+
                    Program.Email = dadosLogin["USR_EMAIL"].ToString();
 
-                    if (alterar != "1")
+                    if (alterar != "False")
                     {
                         altera.ShowDialog();
                     }

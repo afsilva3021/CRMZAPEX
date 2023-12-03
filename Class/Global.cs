@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProjetoMars.WSCorreios;
+using ServiceStack;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -12,6 +14,7 @@ namespace ProjetoMars.Class
     {
         public static string caminhoImagens = caminhoImagens + @"Imagens";
 
+       
        public class Encrypt
         {
             public static string HashString(string input)
@@ -29,5 +32,6 @@ namespace ProjetoMars.Class
                     return algorithm.ComputeHash(Encoding.UTF8.GetBytes(input));
             }
         }
+
     }
 }

@@ -71,6 +71,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1270, 774);
             this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnAlterar
             // 
@@ -132,6 +133,7 @@
             this.btnConsulta.Size = new System.Drawing.Size(35, 33);
             this.btnConsulta.TabIndex = 4;
             this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click_1);
             // 
             // txbBusca
             // 
@@ -219,9 +221,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnConsulta;
         private System.Windows.Forms.TextBox txbBusca;
-        private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnCadastro;
     }
 }

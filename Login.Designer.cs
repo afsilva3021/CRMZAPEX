@@ -220,10 +220,9 @@
             this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxUsername.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.ForeColor = System.Drawing.Color.Black;
-            this.textBoxUsername.Location = new System.Drawing.Point(39, 3);
-            this.textBoxUsername.Multiline = true;
+            this.textBoxUsername.Location = new System.Drawing.Point(39, 7);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(331, 29);
+            this.textBoxUsername.Size = new System.Drawing.Size(331, 19);
             this.textBoxUsername.TabIndex = 2;
             this.textBoxUsername.TextChanged += new System.EventHandler(this.textBoxUsername_TextChanged);
             // 
@@ -255,10 +254,9 @@
             this.textBoxSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSenha.ForeColor = System.Drawing.Color.Black;
-            this.textBoxSenha.Location = new System.Drawing.Point(39, 3);
-            this.textBoxSenha.Multiline = true;
+            this.textBoxSenha.Location = new System.Drawing.Point(39, 8);
             this.textBoxSenha.Name = "textBoxSenha";
-            this.textBoxSenha.Size = new System.Drawing.Size(313, 28);
+            this.textBoxSenha.Size = new System.Drawing.Size(313, 19);
             this.textBoxSenha.TabIndex = 3;
             this.textBoxSenha.TextChanged += new System.EventHandler(this.textBoxSenha_TextChanged);
             // 
