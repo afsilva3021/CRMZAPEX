@@ -129,7 +129,6 @@ DELIMITER ;
 -- Copiando estrutura para tabela crmzapex.cl0010
 CREATE TABLE IF NOT EXISTS `cl0010` (
   `L0_ID` int NOT NULL AUTO_INCREMENT,
-  `L0_STATU` int DEFAULT NULL,
   `L0_COD` varchar(255) DEFAULT NULL,
   `L0_CNPJ` varchar(14) DEFAULT NULL,
   `L0_PESSOA` varchar(255) DEFAULT NULL,
@@ -161,16 +160,19 @@ CREATE TABLE IF NOT EXISTS `cl0010` (
   `L0_SITE` varchar(255) DEFAULT NULL,
   `L0_NATUREZ` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`L0_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Copiando dados para a tabela crmzapex.cl0010: ~6 rows (aproximadamente)
-INSERT IGNORE INTO `cl0010` (`L0_ID`, `L0_STATU`, `L0_COD`, `L0_CNPJ`, `L0_PESSOA`, `L0_UF`, `L0_FRET`, `L0_EMAIL`, `L0_NOME`, `L0_FANT`, `L0_INSC`, `L0_END`, `L0_NUM`, `L0_BAIR`, `L0_CID`, `L0_CEP`, `L0_COMPL`, `L0_TEL`, `L0_CEL`, `L0_DATE`, `L0_END_COB`, `L0_NUM_COB`, `L0_BAIR_COB`, `L0_UF_COB`, `L0_CID_COB`, `L0_CEP_COB`, `L0_EMIL_COB`, `L0_VEND`, `L0_TEL_COB`, `L0_CEL_COB`, `L0_SITE`, `L0_NATUREZ`) VALUES
-	(7, 1, '245', '37938493000115', '1 - Juridico', 'SP - SAO PAULO', '1 - CIF', 'producao@calebeegiovannapizzariadeliveryme.com.br', '', 'Calebe e Giovanna Pizzaria Delivery ME', '409924830030', 'Estrada Municipal Orlando Leme Franco', '617', 'Taquari Ponte', 'Leme', '13615686', '', '1929835678', '19981632892', NULL, '', '', '', '', '', '', '', '999999', '', '', 'www.calebeegiovannapizzariadeliveryme.com.br', ''),
-	(9, 1, '602', '46649427000116', '1 - Juridico', 'SP - SAO PAULO', '1 - CIF', 'contato@arthurefilipebuffetltda.com.br', '', 'Arthur e Filipe Buffet Ltda', '887233817542', 'Passagem Paraíso', '214', 'Inamar', 'Diadema', '09974240', '', '1125046379', '11989097202', NULL, '', '', '', '', '', '', '', '999999', '', '', 'www.arthurefilipebuffetltda.com.br', ''),
-	(11, 1, '806', '93319866000140', '1 - Juridico', 'SP - SAO PAULO', '1 - CIF', 'marketing@carloseduardoeotaviolocacoesdeautomoveisme.com.br', '', 'Carlos Eduardo e Otávio Locações de Automóveis ME', '790068487648', 'Rua Deputado Cantídio Sampaio', '238', 'Morro dos Barbosas', 'São Vicente', '11310140', '', '1336151537', '13992580505', NULL, '', '', '', '', '', '', '', '999999', '', '', 'www.carloseduardoeotaviolocacoesdeautomoveisme.com.br', ''),
-	(14, 1, '290', '37371934000140', '1 - Juridico', 'SP', '1 - CIF', 'compras@gabrielaebentolimpezaltda.com.br', '', 'Gabriela e Bento Limpeza Ltda', '252714497086', 'Rua Jerusalém', '145', 'Jardim do Carmo II', 'Itapecerica da Serra', '06865810', '', '1127493529', '11983961765', NULL, 'Rua Jerusalém', '122', 'Jardim do Carmo II', 'SP', 'Itapecerica da Serra', '02830020', '', '999999', '1127493529', '', 'www.gabrielaebentolimpezaltda.com.br', '111001'),
-	(17, NULL, '726', '57357393000102', '1 - Juridico', 'SP', '1 - CIF', 'marketing@julianaeteresinhalimpezaltda.com.br', '', 'Juliana e Teresinha Limpeza Ltda', '412887899093', 'Rua Silva Alvarenga', '803', 'Vila Nina', 'São Paulo', '02833030', '', '1138767875', '11997032190', NULL, '', '', '', '', '', '', '', '28', '', '', 'www.julianaeteresinhalimpezaltda.com.br', ''),
-	(22, NULL, '308', '', '1 - Juridico', 'SP - SAO PAULO', '1 - CIF', '', '', '', '', '', '', '', '', '', '', '', '', NULL, '', '', '', '', '', '', '', '999999', '', '', '', '');
+-- Copiando dados para a tabela crmzapex.cl0010: ~5 rows (aproximadamente)
+INSERT IGNORE INTO `cl0010` (`L0_ID`, `L0_COD`, `L0_CNPJ`, `L0_PESSOA`, `L0_UF`, `L0_FRET`, `L0_EMAIL`, `L0_NOME`, `L0_FANT`, `L0_INSC`, `L0_END`, `L0_NUM`, `L0_BAIR`, `L0_CID`, `L0_CEP`, `L0_COMPL`, `L0_TEL`, `L0_CEL`, `L0_DATE`, `L0_END_COB`, `L0_NUM_COB`, `L0_BAIR_COB`, `L0_UF_COB`, `L0_CID_COB`, `L0_CEP_COB`, `L0_EMIL_COB`, `L0_VEND`, `L0_TEL_COB`, `L0_CEL_COB`, `L0_SITE`, `L0_NATUREZ`) VALUES
+	(7, '245', '37938493000115', '1 - Juridico', 'SP - SAO PAULO', '1 - CIF', 'producao@calebeegiovannapizzariadeliveryme.com.br', '', 'Calebe e Giovanna Pizzaria Delivery ME', '409924830030', 'Estrada Municipal Orlando Leme Franco', '617', 'Taquari Ponte', 'Leme', '13615686', '', '1929835678', '19981632892', NULL, '', '', '', '', '', '', '', '999999', '', '', 'www.calebeegiovannapizzariadeliveryme.com.br', ''),
+	(9, '602', '46649427000116', '1 - Juridico', 'SP - SAO PAULO', '1 - CIF', 'contato@arthurefilipebuffetltda.com.br', '', 'Arthur e Filipe Buffet Ltda', '887233817542', 'Passagem Paraíso', '214', 'Inamar', 'Diadema', '09974240', '', '1125046379', '11989097202', NULL, '', '', '', '', '', '', '', '999999', '', '', 'www.arthurefilipebuffetltda.com.br', ''),
+	(11, '806', '93319866000140', '1 - Juridico', 'SP - SAO PAULO', '1 - CIF', 'marketing@carloseduardoeotaviolocacoesdeautomoveisme.com.br', '', 'Carlos Eduardo e Otávio Locações de Automóveis ME', '790068487648', 'Rua Deputado Cantídio Sampaio', '238', 'Morro dos Barbosas', 'São Vicente', '11310140', '', '1336151537', '13992580505', NULL, '', '', '', '', '', '', '', '999999', '', '', 'www.carloseduardoeotaviolocacoesdeautomoveisme.com.br', ''),
+	(14, '290', '37371934000140', '1 - Juridico', 'SP', '1 - CIF', 'compras@gabrielaebentolimpezaltda.com.br', '', 'Gabriela e Bento Limpeza Ltda', '252714497086', 'Rua Jerusalém', '145', 'Jardim do Carmo II', 'Itapecerica da Serra', '06865810', '', '1127493529', '11983961765', NULL, 'Rua Jerusalém', '122', 'Jardim do Carmo II', 'SP', 'Itapecerica da Serra', '02830020', '', '999999', '1127493529', '', 'www.gabrielaebentolimpezaltda.com.br', '111001'),
+	(17, '726', '57357393000102', '1 - Juridico', 'SP', '1 - CIF', 'marketing@julianaeteresinhalimpezaltda.com.br', '', 'Juliana e Teresinha Limpeza Ltda', '412887899093', 'Rua Silva Alvarenga', '803', 'Vila Nina', 'São Paulo', '02833030', '', '1138767875', '11997032190', NULL, '', '', '', '', '', '', '', '28', '', '', 'www.julianaeteresinhalimpezaltda.com.br', ''),
+	(25, '301', '50440116000110', '1 - Juridico', 'SP', '1 - CIF', 'vendas@carlosemarlimarketingltda.com.br', 'Carlos e Marli Marketing Ltda', 'Carlos e Marli Marketing Ltda', '512784441344', 'Rua Urati', '998', 'Jardim Telespark', 'São José dos Campos', '12212800', '', '1236540283', '12981682608', NULL, 'Rua Urati', '', 'Jardim Telespark', 'SP', 'São José dos Campos', '12212800', '', '999999', '', '', 'www.carlosemarlimarketingltda.com.br', ''),
+	(26, '822', '13830946000127', '1 - Juridico', 'SP', '1 - CIF', 'ouvidoria@raimundaejorgelimpezame.com.br', 'Raimunda e Jorge Limpeza ME', 'Raimunda e Jorge Limpeza ME', '256092853133', 'Alameda Finlândia', '736', 'Jardim Europa', 'Bragança Paulista', '12919180', '', '1138417405', '11994398958', NULL, 'Alameda Finlândia', '', 'Jardim Europa', 'SP', 'Bragança Paulista', '12919180', 'ouvidoria@raimundaejorgelimpezame.com.br', '999999', '', '', 'www.raimundaejorgelimpezame.com.br', ''),
+	(27, '319', '19913458000160', '1 - Juridico', 'SP', '1 - CIF', 'tesouraria@josefaepedropizzariadeliveryltda.com.br', 'Josefa e Pedro Pizzaria Delivery Ltda', 'Josefa e Pedro Pizzaria Delivery Ltda', '646827358785', 'Rua Antônio Cardoso Franco', '189', 'Casa Branca', 'Santo André', '09015530', '', '1125531787', '11986862091', NULL, 'Rua Antônio Cardoso Franco', '', 'Casa Branca', 'SP', 'Santo André', '09015530', 'tesouraria@josefaepedropizzariadeliveryltda.com.br', '999999', '', '', 'www.josefaepedropizzariadeliveryltda.com.br', ''),
+	(28, '810', '83217333000102', '1 - Juridico', 'SP', '1 - CIF', 'posvenda@milenaelaraadvocacialtda.com.br', 'Milena e Lara Advocacia Ltda', 'Milena e Lara Advocacia Ltda', '425666024509', 'Rua Caetetuba', '473', 'Jardim Santa Maria', 'Campo Limpo Paulista', '13232365', '', '', '', NULL, 'Rua Caetetuba', '', 'Jardim Santa Maria', 'SP', 'Campo Limpo Paulista', '13232365', '', '999999', '', '', '', '');
 
 -- Copiando estrutura para procedure crmzapex.ConsultarSysUsrPorUsuario
 DELIMITER //
@@ -227,25 +229,29 @@ DELIMITER ;
 -- Copiando estrutura para tabela crmzapex.pd0010
 CREATE TABLE IF NOT EXISTS `pd0010` (
   `D0_ID` int NOT NULL AUTO_INCREMENT,
-  `D0_COD` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `D0_REFENC` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `D0_FORNEC` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `D0_MARCA` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `D0_SALDO` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `D0_CUSTO` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `D0_VEND` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `D0_DESC` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `D0_ESTMINIMO` varchar(150) DEFAULT NULL,
-  `D0_ESTMAXIMO` varchar(150) DEFAULT NULL,
-  `D0_DESCONTO` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_COD` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_REFENC` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_FORNEC` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_MARCA` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_SALDO` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_CUSTO` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_VEND` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_DESC` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_ESTMINIMO` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_ESTMAXIMO` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `D0_DESCONTO` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `D0_IMG` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`D0_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Tabela de Produtos';
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='Tabela de Produtos';
 
--- Copiando dados para a tabela crmzapex.pd0010: ~2 rows (aproximadamente)
+-- Copiando dados para a tabela crmzapex.pd0010: ~1 rows (aproximadamente)
 INSERT IGNORE INTO `pd0010` (`D0_ID`, `D0_COD`, `D0_REFENC`, `D0_FORNEC`, `D0_MARCA`, `D0_SALDO`, `D0_CUSTO`, `D0_VEND`, `D0_DESC`, `D0_ESTMINIMO`, `D0_ESTMAXIMO`, `D0_DESCONTO`, `D0_IMG`) VALUES
 	(1, '051000012517', '000412238', 'Microsoft', 'Microsoft', '20', '10,00', '50,00', 'Licensa Windows 11 Pro', '10', '60', '0', 'ImagensRWMr0r.png'),
-	(2, '999222111', '3322111', 'Microsoft', 'Microsoft', '10', '10,00', '100,00', 'Licensa Office 365', '10', '100', '0', 'Imagense70a3c65-3a17-4846-9b57-f968507f4d07.png');
+	(2, '999222111', '3322111', 'Microsoft', 'Microsoft', '10', '10,00', '100,00', 'Licensa Office 365', '10', '100', '0', 'Imagense70a3c65-3a17-4846-9b57-f968507f4d07.png'),
+	(3, '2312321312', '5345345', 'Microsoft', 'Microsoft', '10', '10,00', '50,00', 'Licença office ', '10', '50', '0', 'Imagense70a3c65-3a17-4846-9b57-f968507f4d07.png'),
+	(4, '0192876187432', '4718017187435', 'Amazon', 'Asus', '4', '540,90', '649,00', 'Placa-Mãe ASUS Prime - B450M Gaming/BR, AMD AM4, mATX, DDR4', '2', '10', '0', 'Imagensplaca mae.png'),
+	(9, '7892597353064', '7892597353064', 'Amazon', 'Motorola', '5', '659,00', '759', 'Smartphone Motorola Moto E13 4G 64GB 4GB RAM Off White', '1', '10', '0', 'C:\\CRMZAPEX\\CRMZAPEX\\Image156808-800-auto.png'),
+	(10, '7892597353064', '123', 'Amazon', 'Motorola', '40', '659,00', '890,00', 'Smartphone Motorola Moto E13 4G 64GB 4GB RAM Off White', '10', '60', '', 'C:\\CRMZAPEX\\CRMZAPEX\\Image156808-800-auto.png');
 
 -- Copiando estrutura para tabela crmzapex.sys_usr
 CREATE TABLE IF NOT EXISTS `sys_usr` (
@@ -261,31 +267,32 @@ CREATE TABLE IF NOT EXISTS `sys_usr` (
   `USR_BLQ` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `USR_ALT` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`USR_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Copiando dados para a tabela crmzapex.sys_usr: ~3 rows (aproximadamente)
+-- Copiando dados para a tabela crmzapex.sys_usr: ~5 rows (aproximadamente)
 INSERT IGNORE INTO `sys_usr` (`USR_ID`, `USR_USER`, `USR_NOME`, `USR_PWD`, `USR_EMAIL`, `USR_DATBLQ`, `USR_DEPARTAMENTO`, `USR_CARGO`, `USR_GRUPO`, `USR_BLQ`, `USR_ALT`) VALUES
-	(11, '21902', 'ALEX FELIX DA SILVA', '0a60650a405902004202f09d04107e0480670ef0dc04f0b80a004a01f03f0ff01f0a007e09908e0860f70f70a207a0e3', 'afsilva3021@uni9.edu.br', NULL, 'Comercial', 'Vendas', '1 - Vendas', '1 - Ativo', '1'),
-	(12, 'admin', 'administrador', '08c0690760e50b50410040150bd0e90080bd04d0ee0150df0b10670a90c80730fc04b0b80a801f06f02a0b40480a9018', '', NULL, 'administrador', 'administrador', '1 - Vendas', '1 - Ativo', '1'),
-	(18, 'edson', 'ED', '0a60650a405902004202f09d04107e0480670ef0dc04f0b80a004a01f03f0ff01f0a007e09908e0860f70f70a207a0e3', 'edson.morais@teste.com.br', NULL, 'ti', 'super entendente do ti', '4 - Administração', '1 - Ativo', '1');
+	(1, 'admin', 'administrador', '08c0690760e50b50410040150bd0e90080bd04d0ee0150df0b10670a90c80730fc04b0b80a801f06f02a0b40480a9018', '', NULL, 'administrador', 'administrador', '1 - Vendas', '1 - Ativo', 'False'),
+	(40, 'professor', 'Leandro', '0a60650a405902004202f09d04107e0480670ef0dc04f0b80a004a01f03f0ff01f0a007e09908e0860f70f70a207a0e3', 'professor@uni9.edu.br', NULL, 'professor', 'professor', '1 - Vendas', '1 - Ativo', 'False'),
+	(42, 'alex', 'alex', '08c0690760e50b50410040150bd0e90080bd04d0ee0150df0b10670a90c80730fc04b0b80a801f06f02a0b40480a9018', 'alex@uni9.edu,br', NULL, '', '', '1 - Vendas', '1 - Ativo', 'False');
 
 -- Copiando estrutura para tabela crmzapex.xt0010
 CREATE TABLE IF NOT EXISTS `xt0010` (
   `T0_ID` int NOT NULL AUTO_INCREMENT,
-  `T0_COD` varchar(155) NOT NULL DEFAULT '0',
-  `T0_CLIENT` varchar(155) NOT NULL DEFAULT '0',
-  `T0_FANTASIA` varchar(155) NOT NULL DEFAULT '0',
-  `T0_CNPJ` varchar(155) NOT NULL DEFAULT '0',
-  `T0_SITUA` varchar(155) NOT NULL DEFAULT '0',
-  `T0_ENTREGA` varchar(155) NOT NULL DEFAULT '0',
-  `T0_VENDEDOR` varchar(155) NOT NULL DEFAULT '0',
-  `T0_CONDPAG` varchar(155) NOT NULL DEFAULT '0',
-  `T0_TIPOFRETE` varchar(155) NOT NULL DEFAULT '0',
-  `T0_VALORFRETE` varchar(155) NOT NULL DEFAULT '0',
-  `T0_NUMPEDCLIENT` varchar(155) NOT NULL DEFAULT '0',
-  `T0_DESC` varchar(255) NOT NULL DEFAULT '0',
-  `T0_STATUS` varchar(155) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`T0_ID`) USING BTREE
+  `T0_COD` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_CLIENT` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_FANTASIA` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_CNPJ` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_SITUA` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_ENTREGA` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_VENDEDOR` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_CONDPAG` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_TIPOFRETE` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_VALORFRETE` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_NUMPEDCLIENT` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_DESC` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  `T0_STATUS` varchar(155) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT '0',
+  PRIMARY KEY (`T0_ID`) USING BTREE,
+  KEY `T0_COD` (`T0_COD`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Copiando dados para a tabela crmzapex.xt0010: ~1 rows (aproximadamente)
@@ -296,14 +303,30 @@ INSERT IGNORE INTO `xt0010` (`T0_ID`, `T0_COD`, `T0_CLIENT`, `T0_FANTASIA`, `T0_
 CREATE TABLE IF NOT EXISTS `xt0020` (
   `T2_ID` int NOT NULL AUTO_INCREMENT,
   `T2_CODIGO` varchar(150) DEFAULT NULL,
+  `T2_REFERENCE` varchar(150) DEFAULT NULL,
+  `T2_VALORCUSTO` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `T2_VALORVENDA` varchar(150) DEFAULT NULL,
+  `T2_FORNECEDOR` varchar(150) DEFAULT NULL,
+  `T2_MARCA` varchar(150) DEFAULT NULL,
   `T2_DESCIRCAO` varchar(150) DEFAULT NULL,
-  `T2_VALOR` varchar(150) DEFAULT NULL,
-  `T2_TOTAL` varchar(150) DEFAULT NULL,
   `T2_QTD` varchar(150) DEFAULT NULL,
-  PRIMARY KEY (`T2_ID`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `T2_DESCONTO` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `T2_XT1NUM` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`T2_ID`) USING BTREE,
+  KEY `T2_XT1NUM` (`T2_XT1NUM`)
+) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Copiando dados para a tabela crmzapex.xt0020: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela crmzapex.xt0020: ~5 rows (aproximadamente)
+INSERT IGNORE INTO `xt0020` (`T2_ID`, `T2_CODIGO`, `T2_REFERENCE`, `T2_VALORCUSTO`, `T2_VALORVENDA`, `T2_FORNECEDOR`, `T2_MARCA`, `T2_DESCIRCAO`, `T2_QTD`, `T2_DESCONTO`, `T2_XT1NUM`) VALUES
+	(25, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '872'),
+	(26, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '816'),
+	(27, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '816'),
+	(28, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '391'),
+	(29, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '391'),
+	(30, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '521'),
+	(31, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '905'),
+	(32, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '905'),
+	(33, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '905');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

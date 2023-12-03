@@ -23,53 +23,46 @@ namespace ProjetoMars.FormControleUsuario.CallCenter.Cliente
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            bool formValidado;
-
-            if (txbCNPJ.Text == null)
+            
+            if (string.IsNullOrWhiteSpace(txbCNPJ.Text))
             {
-                formValidado = false;
+                MessageBox.Show("Campos não preenchidos Favor preencher os campos com *");
+                return;
             }
-            else if (cbPessoa.Text == null)
+            else if (string.IsNullOrWhiteSpace(cbPessoa.Text))
             {
-                formValidado = false;
+                MessageBox.Show("Campos não preenchidos Favor preencher os campos com *");
+                return;
             }
-            else if (cbUf.Text == null)
+            else if (string.IsNullOrWhiteSpace(cbUf.Text))
             {
-                formValidado = false;
+                MessageBox.Show("Campos não preenchidos Favor preencher os campos com *");
+                return;
             }
-            else if (txbNome.Text == null)
+            else if (string.IsNullOrWhiteSpace(txbNome.Text))
             {
-                formValidado = false;
+                MessageBox.Show("Campos não preenchidos Favor preencher os campos com *");
+                return;
             }
-            else if (txbInscre.Text == null)
+            else if (string.IsNullOrWhiteSpace(txbInscre.Text))
             {
-                formValidado = false;
+                MessageBox.Show("Campos não preenchidos Favor preencher os campos com *");
+                return;
             }
-            else if (txbCidade.Text == null)
+            else if (string.IsNullOrWhiteSpace(txbCidade.Text))
             {
-                formValidado = false;
+                MessageBox.Show("Campos não preenchidos Favor preencher os campos com *");
+                return;
             }
-            else if (txbCep.Text == null)
+            else if (string.IsNullOrWhiteSpace(txbCep.Text))
             {
-                formValidado = false;
+                MessageBox.Show("Campos não preenchidos Favor preencher os campos com *");
+                return;
             }
             else
-            {
-                formValidado = true;
-            }
-
-
-
-
-            if (formValidado)
             {
                 grava();
             }
-            else
-            {
-                MessageBox.Show("Campos nao preenchidos Favor preencher os campos com *");
-            }
-
         }
 
         public void grava()

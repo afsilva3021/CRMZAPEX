@@ -24,7 +24,7 @@ namespace ProjetoMars.FormControleUsuario.Configurações
         private void dataGridView1_Load(object sender, EventArgs e)
         {
             consulta();
-            consulta();
+           
 
         }
 
@@ -54,7 +54,7 @@ namespace ProjetoMars.FormControleUsuario.Configurações
             dataGridView1.Columns[0].HeaderText = "Bloqueado";
             dataGridView1.Columns[0].HeaderText = "Departamento";
             dataGridView1.Columns[0].HeaderText = "Cargo";
-            dataGridView1.Columns[0].HeaderText = "Grupo";
+            dataGridView1.Columns[0].HeaderText = "Alterar";
 
 
         }

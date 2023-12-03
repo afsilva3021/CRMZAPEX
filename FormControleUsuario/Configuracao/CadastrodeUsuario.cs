@@ -43,32 +43,22 @@ namespace ProjetoMars.FormControleUsuario.Configuracao
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            bool formValidado = true;
-
-            if (txtCodigo.Text != null)
+           
+            if (string.IsNullOrWhiteSpace(txtCodigo.Text))
             {
-                formValidado = true;
-                MessageBox.Show("Campo codigo em branco favor preencher o campo");
+                
+                MessageBox.Show("Campos não preenchidos Favor preencher os campos com *");
+                return;
             }
-            else if (txtNome.Text != null)
+            else if (string.IsNullOrWhiteSpace(txtNome.Text))
             {
-                formValidado = false;
-                MessageBox.Show("Campo Nome em branco favor preencher o campo");
-            }
-            else if (txtSenha != null)
-            {
-                formValidado = false;
-                MessageBox.Show("Campo Senha em branco favor preencher o campo");
-            }
-            else if (formValidado)
-            {
-                cadastro();
+                MessageBox.Show("Campos não preenchidos Favor preencher os campos com *");
+                return;
             }
             else
             {
-                MessageBox.Show("Campos nao preenchidos Favor preencher os campos com *");   
+                cadastro();
             }
-
 
         }
 
@@ -136,7 +126,7 @@ namespace ProjetoMars.FormControleUsuario.Configuracao
             {
                 Program.conn.UPDATE("START TRANSACTION;");
 
-                var altera = $"UPDATE SYS_USR SET USR_USER = '{txtCodigo.Text}', USR_NOME = '{txtNome.Text}', USR_PWD = '{Global.Encrypt.HashString(senha)}', USR_EMAIL = '{txtEmail.Text}', USR_DEPARTAMENTO = '{txtDepartamento.Text}', USR_CARGO = '{txtCargo.Text}', USR_GRUPO = '{cbGrupo.Text}', USR_BLQ = '{cbBLQ.Text}', USR_ALT = '{checkBox1.Checked}' WHERE USR_NOME = '{txtNome.Text}' OR USR_USER = '{txtCodigo.Text}'";
+                var altera = $"UPDATE SYS_USR SET USR_USER = '{txtCodigo.Text}', USR_NOME = '{txtNome.Text}', USR_PWD = '{Encrypt.HashString(senha)}', USR_EMAIL = '{txtEmail.Text}', USR_DEPARTAMENTO = '{txtDepartamento.Text}', USR_CARGO = '{txtCargo.Text}', USR_GRUPO = '{cbGrupo.Text}', USR_BLQ = '{cbBLQ.Text}', USR_ALT = '{checkBox1.Checked}' WHERE USR_NOME = '{txtNome.Text}' OR USR_USER = '{txtCodigo.Text}'";
 
                 Program.conn.UPDATE(altera);
 

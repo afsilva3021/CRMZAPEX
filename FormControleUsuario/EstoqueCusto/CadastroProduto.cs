@@ -28,7 +28,7 @@ namespace ProjetoMars.FormControleUsuario.Estoque_e_custo
         {
             Program.conn.INSERT("START TRANSACTION");
 
-            string cmdSql = $"CALL cadastroProduto('{txtCodigo.Text}','{txtReferencia.Text}','{txtFornecedor.Text}','{txtMarca.Text}','{txtSaldo.Text}','{txtCusto.Text}','{txtProco.Text}','{txtEstMinimo.Text}','{txtEstMaximo.Text}','{txtDescricao.Text}','{txtDesc.Text}','{DestinoCompleto}');";
+            var cmdSql = $"INSERT INTO PD0010 (D0_COD, D0_REFENC, D0_FORNEC, D0_MARCA, D0_SALDO, D0_CUSTO, D0_VEND, D0_ESTMINIMO, D0_ESTMAXIMO, D0_DESC, D0_DESCONTO, D0_IMG) VALUES ('{txtCodigo.Text}','{txtReferencia.Text}','{txtFornecedor.Text}','{txtMarca.Text}','{txtSaldo.Text}','{txtCusto.Text}','{txtProco.Text}','{txtEstMinimo.Text}','{txtEstMaximo.Text}','{txtDescricao.Text}','{txtDesc.Text}','{DestinoCompleto}');";
 
             if (!Program.conn.INSERT(cmdSql))
             {
@@ -60,7 +60,7 @@ namespace ProjetoMars.FormControleUsuario.Estoque_e_custo
             }
             if (File.Exists(DestinoCompleto))
             {
-                if (MessageBox.Show("Arquivo ja exite, deseja Substituir ?"+MessageBoxButtons.OKCancel)==DialogResult.Cancel)
+                if (MessageBox.Show("Arquivo ja exite, deseja Substituir ?","Substituir",MessageBoxButtons.YesNo)==DialogResult.No)
                 {
                     return;
                 }
