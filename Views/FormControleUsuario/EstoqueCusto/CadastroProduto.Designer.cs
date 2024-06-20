@@ -313,7 +313,6 @@
             this.btnSalvar.Text = "Confirma";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSalvar.UseVisualStyleBackColor = false;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // panel2
             // 
@@ -339,7 +338,6 @@
             this.btnArquivo.TabIndex = 87;
             this.btnArquivo.Text = "Add imagem";
             this.btnArquivo.UseVisualStyleBackColor = true;
-            this.btnArquivo.Click += new System.EventHandler(this.btnArquivo_Click);
             // 
             // openFileDialog1
             // 

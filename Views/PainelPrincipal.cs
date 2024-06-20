@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjetoMars.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProjetoMars
 {
@@ -21,7 +21,8 @@ namespace ProjetoMars
         private Boolean showpanelFaturamento = false;
         private Boolean showpanelLivrosFiscais = false;
 
-        FormControleUsuario.PanelHome.UserControlHome HomePage = new FormControleUsuario.PanelHome.UserControlHome();
+
+        UserControl Home = new UserControlHome();
         FormControleUsuario.CallCenter.UserControlOrcamento Orcamento = new FormControleUsuario.CallCenter.UserControlOrcamento();
         FormControleUsuario.CallCenter.UserControlClients Clientes = new FormControleUsuario.CallCenter.UserControlClients();
         FormControleUsuario.CallCenter.UserControlAprovacaoComercial AprovacaoComercial = new FormControleUsuario.CallCenter.UserControlAprovacaoComercial();
@@ -77,8 +78,7 @@ namespace ProjetoMars
 
             tooglePanels();
             panelHome.Controls.Clear();
-            panelHome.Controls.Add(HomePage);
-            HomePage.Dock = DockStyle.Fill;
+
         }
         private void PainelPrincipal_Load(object sender, EventArgs e)
         {
@@ -175,16 +175,17 @@ namespace ProjetoMars
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            
+
+
             panelHome.Controls.Clear();
-            panelHome.Controls.Add(HomePage);
-            HomePage.Dock = DockStyle.Fill;
+            panelHome.Controls.Add(Home);
+            Home.Dock = DockStyle.Fill;
             btnHome.Refresh();
         }
 
         private void btnProdutos_Click(object sender, EventArgs e)
         {
-            
+            Home.Refresh();
             panelHome.Controls.Clear();
             panelHome.Controls.Add(Produtos);
             Produtos.Dock = DockStyle.Fill;

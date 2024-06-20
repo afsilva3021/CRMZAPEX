@@ -12,9 +12,6 @@ namespace ProjetoMars.Class
 {
     internal class Global
     {
-        public static string caminhoImagens = caminhoImagens + @"C:\\CRMZAPEX\\CRMZAPEX\\Image";
-
-       
        public class Encrypt
         {
             public static string HashString(string input)

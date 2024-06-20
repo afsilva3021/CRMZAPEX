@@ -21,27 +21,38 @@ namespace ProjetoMars
             InitializeComponent();
         }
         FormControleUsuario.Configuracao.AlteraSenha altera = new FormControleUsuario.Configuracao.AlteraSenha();
-        private void textBoxSenha_TextChanged(object sender, EventArgs e)
-        {
-            textBoxSenha.PasswordChar = '*';
-
-            textBoxSenha.MaxLength = 14;
-
-            textBoxSenha.TextAlign = HorizontalAlignment.Center;
-        }
 
         private void textBoxUsername_TextChanged(object sender, EventArgs e)
         {
-            string user = textBoxUsername.Text;
+            string user = txtUser.Text;
             user.ToLower();
 
-            textBoxUsername.TextAlign = HorizontalAlignment.Center;
+            txtUser.TextAlign = HorizontalAlignment.Center;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
-       
-            string login = textBoxUsername.Text;
+            DialogResult resultado = MessageBox.Show("Deseja Fechar o Sistema", "Confirmação", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (resultado == DialogResult.OK)
+            {
+                Application.Exit(); // Fecha o aplicativo
+            }
+            // Se o usuário clicar em "Cancelar", nada acontece.
+        }
+
+        private void btnVer_Click_1(object sender, EventArgs e)
+        {
+            if (txtSenha.PasswordChar == '*')
+                txtSenha.PasswordChar = '\0';
+            else
+                txtSenha.PasswordChar = '*';
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            string login = txtUser.Text;
 
             string cmdSql = $"CALL ConsultarSysUsrPorUsuario('{login}');";
 
@@ -57,12 +68,12 @@ namespace ProjetoMars
 
                 var alterar = alteraSenha["USR_ALT"].ToString();
 
-                if (senhaUSR == Encrypt.HashString(textBoxSenha.Text))
+                if (senhaUSR == Encrypt.HashString(txtSenha.Text))
                 {
 
-                   Program.UsuarioLogado = dadosLogin["USR_NOME"].ToString();
+                    Program.UsuarioLogado = dadosLogin["USR_NOME"].ToString();
 
-                   Program.Email = dadosLogin["USR_EMAIL"].ToString();
+                    Program.Email = dadosLogin["USR_EMAIL"].ToString();
 
                     if (alterar != "False")
                     {
@@ -71,7 +82,7 @@ namespace ProjetoMars
                     else
                     {
                         this.DialogResult = DialogResult.OK;
-                    }    
+                    }
                 }
                 else
                 {
@@ -82,26 +93,6 @@ namespace ProjetoMars
             {
                 MessageBox.Show("Usuario nao encontrado");
             }
-        }
-
-        private void btnClose_Click_1(object sender, EventArgs e)
-        {
-            DialogResult resultado = MessageBox.Show("Deseja Fechar o Sistema", "Confirmação", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-
-            if (resultado == DialogResult.OK)
-            {
-                Application.Exit(); // Fecha o aplicativo
-            }
-            // Se o usuário clicar em "Cancelar", nada acontece.
-        }
-
-        private void btnVer_Click(object sender, EventArgs e)
-        {
-
-            if (textBoxSenha.PasswordChar == '*')
-                textBoxSenha.PasswordChar = '\0';
-            else
-                textBoxSenha.PasswordChar = '*';
         }
     }
 }

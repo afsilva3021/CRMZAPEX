@@ -13,7 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\Users\alex.felix\Documents\Sistem\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -23,9 +23,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -47,21 +48,36 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8C20DDF8E79D54CBB7ECC124D289B0058CD8D3CB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ProjetoMars_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Google.Protobuf, Version=3.21.9.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>packages\Google.Protobuf.3.21.9\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.27.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Protobuf.3.27.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="GumroadLicensing, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\GumroadLicensing.2.0.2\lib\net45\GumroadLicensing.dll</HintPath>
+      <HintPath>packages\GumroadLicensing.2.0.5\lib\net45\GumroadLicensing.dll</HintPath>
     </Reference>
     <Reference Include="Iot.Device.Button, Version=1.2.0.0, Culture=neutral, PublicKeyToken=c07d481e9758c731, processorArchitecture=MSIL">
-      <HintPath>packages\nanoFramework.Iot.Device.Button.1.2.436\lib\Iot.Device.Button.dll</HintPath>
+      <HintPath>packages\nanoFramework.Iot.Device.Button.1.2.570\lib\Iot.Device.Button.dll</HintPath>
     </Reference>
-    <Reference Include="K4os.Compression.LZ4, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
-      <HintPath>packages\K4os.Compression.LZ4.1.3.5\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
     </Reference>
-    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.5.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
-      <HintPath>packages\K4os.Compression.LZ4.Streams.1.3.5\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
@@ -85,45 +101,45 @@
       <HintPath>packages/Microsoft.Extensions.Logging.Abstractions.8.0.1/lib/net462/Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MySql.Data, Version=8.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>packages\MySql.Data.8.1.0\lib\net48\MySql.Data.dll</HintPath>
+    <Reference Include="MySql.Data, Version=8.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.4.0\lib\net48\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="nanoFramework.Runtime.Events, Version=1.11.15.0, Culture=neutral, PublicKeyToken=c07d481e9758c731, processorArchitecture=MSIL">
-      <HintPath>packages\nanoFramework.Runtime.Events.1.11.15\lib\nanoFramework.Runtime.Events.dll</HintPath>
+    <Reference Include="nanoFramework.Runtime.Events, Version=1.11.18.0, Culture=neutral, PublicKeyToken=c07d481e9758c731, processorArchitecture=MSIL">
+      <HintPath>packages\nanoFramework.Runtime.Events.1.11.18\lib\nanoFramework.Runtime.Events.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Npgsql, Version=8.0.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7">
       <HintPath>packages/Npgsql.8.0.3/lib/netstandard2.0/Npgsql.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
-      <HintPath>packages\Oracle.ManagedDataAccess.19.13.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.23.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>packages\Oracle.ManagedDataAccess.23.4.0\lib\net472\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>packages\ServiceStack.Common.6.0.2\lib\net472\ServiceStack.Common.dll</HintPath>
+      <HintPath>packages\ServiceStack.Common.8.3.0\lib\net472\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Interfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>packages\ServiceStack.Interfaces.6.0.2\lib\net472\ServiceStack.Interfaces.dll</HintPath>
+      <HintPath>packages\ServiceStack.Interfaces.8.3.0\lib\net472\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>packages\ServiceStack.OrmLite.6.0.2\lib\net472\ServiceStack.OrmLite.dll</HintPath>
+      <HintPath>packages\ServiceStack.OrmLite.8.3.0\lib\net472\ServiceStack.OrmLite.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite.MySql, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>packages\ServiceStack.OrmLite.MySql.6.0.2\lib\net472\ServiceStack.OrmLite.MySql.dll</HintPath>
+      <HintPath>packages\ServiceStack.OrmLite.MySql.8.3.0\lib\net472\ServiceStack.OrmLite.MySql.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite.Oracle, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>packages\ServiceStack.OrmLite.Oracle.6.0.2\lib\net472\ServiceStack.OrmLite.Oracle.dll</HintPath>
+      <HintPath>packages\ServiceStack.OrmLite.Oracle.8.3.0\lib\net472\ServiceStack.OrmLite.Oracle.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite.PostgreSQL, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>packages\ServiceStack.OrmLite.PostgreSQL.6.0.2\lib\net472\ServiceStack.OrmLite.PostgreSQL.dll</HintPath>
+      <HintPath>packages\ServiceStack.OrmLite.PostgreSQL.8.3.0\lib\net472\ServiceStack.OrmLite.PostgreSQL.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>packages\ServiceStack.OrmLite.SqlServer.6.0.2\lib\net472\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+      <HintPath>packages\ServiceStack.OrmLite.SqlServer.8.3.0\lib\net472\ServiceStack.OrmLite.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Text, Version=6.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
-      <HintPath>packages\ServiceStack.Text.6.0.2\lib\net472\ServiceStack.Text.dll</HintPath>
+      <HintPath>packages\ServiceStack.Text.8.3.0\lib\net472\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -136,20 +152,23 @@
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Device.Gpio, Version=1.1.38.0, Culture=neutral, PublicKeyToken=c07d481e9758c731, processorArchitecture=MSIL">
-      <HintPath>packages\nanoFramework.System.Device.Gpio.1.1.38\lib\System.Device.Gpio.dll</HintPath>
+    <Reference Include="System.Device.Gpio, Version=1.1.41.0, Culture=neutral, PublicKeyToken=c07d481e9758c731, processorArchitecture=MSIL">
+      <HintPath>packages\nanoFramework.System.Device.Gpio.1.1.41\lib\System.Device.Gpio.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
       <HintPath>packages/System.Diagnostics.DiagnosticSource.8.0.1/lib/net462/System.Diagnostics.DiagnosticSource.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    <Reference Include="System.Formats.Asn1, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Formats.Asn1.8.0.0\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Pipelines.8.0.0\lib\net462\System.IO.Pipelines.dll</HintPath>
     </Reference>
     <Reference Include="System.Management" />
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -194,112 +213,106 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="ZstdSharp, Version=0.7.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
-      <HintPath>packages\ZstdSharp.Port.0.7.1\lib\net461\ZstdSharp.dll</HintPath>
+    <Reference Include="ZstdSharp, Version=0.8.1.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>packages\ZstdSharp.Port.0.8.1\lib\net462\ZstdSharp.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Conect.cs" />
-    <Compile Include="Class\Global.cs" />
+    <Compile Include="Controller\Conect.cs" />
+    <Compile Include="Controller\Global.cs" />
     <Compile Include="Connected Services\WSCorreios\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\Cliente\CadastroCliente.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\Cliente\CadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\Cliente\CadastroCliente.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\Cliente\CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\Orcamento\adicionarProduto.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\Orcamento\adicionarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\Orcamento\adicionarProduto.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\Orcamento\adicionarProduto.Designer.cs">
       <DependentUpon>adicionarProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\Orcamento\atendimento.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\Orcamento\atendimento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\Orcamento\atendimento.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\Orcamento\atendimento.Designer.cs">
       <DependentUpon>atendimento.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\Orcamento\ConsultaPRodutos.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\Orcamento\ConsultaPRodutos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\Orcamento\ConsultaPRodutos.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\Orcamento\ConsultaPRodutos.Designer.cs">
       <DependentUpon>ConsultaPRodutos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\UserControlAprovacaoComercial.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\UserControlAprovacaoComercial.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\UserControlAprovacaoComercial.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\UserControlAprovacaoComercial.Designer.cs">
       <DependentUpon>UserControlAprovacaoComercial.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\UserControlClients.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\UserControlClients.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\UserControlClients.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\UserControlClients.Designer.cs">
       <DependentUpon>UserControlClients.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\UserControlDashboard.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\UserControlDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\UserControlDashboard.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\UserControlDashboard.Designer.cs">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\UserControlOrcamento.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\UserControlOrcamento.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\CallCenter\UserControlOrcamento.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\CallCenter\UserControlOrcamento.Designer.cs">
       <DependentUpon>UserControlOrcamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\Configuracao\AlteraSenha.cs">
+    <Compile Include="Views\FormControleUsuario\Configuracao\AlteraSenha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\Configuracao\AlteraSenha.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\Configuracao\AlteraSenha.Designer.cs">
       <DependentUpon>AlteraSenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\Configuracao\CadastrodeUsuario.cs">
+    <Compile Include="Views\FormControleUsuario\Configuracao\CadastrodeUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\Configuracao\CadastrodeUsuario.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\Configuracao\CadastrodeUsuario.Designer.cs">
       <DependentUpon>CadastrodeUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\Configuracao\Configuracoes.cs">
+    <Compile Include="Views\FormControleUsuario\Configuracao\Configuracoes.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\Configuracao\Configuracoes.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\Configuracao\Configuracoes.Designer.cs">
       <DependentUpon>Configuracoes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\EstoqueCusto\CadastroProduto.cs">
+    <Compile Include="Views\FormControleUsuario\EstoqueCusto\CadastroProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\EstoqueCusto\CadastroProduto.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\EstoqueCusto\CadastroProduto.Designer.cs">
       <DependentUpon>CadastroProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\EstoqueCusto\Produtos.cs">
+    <Compile Include="Views\FormControleUsuario\EstoqueCusto\Produtos.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormControleUsuario\EstoqueCusto\Produtos.Designer.cs">
+    <Compile Include="Views\FormControleUsuario\EstoqueCusto\Produtos.Designer.cs">
       <DependentUpon>Produtos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormControleUsuario\PanelHome\UserControlHome.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FormControleUsuario\PanelHome\UserControlHome.Designer.cs">
-      <DependentUpon>UserControlHome.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Views\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PainelPrincipal.cs">
+    <Compile Include="Views\PainelPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PainelPrincipal.Designer.cs">
+    <Compile Include="Views\PainelPrincipal.Designer.cs">
       <DependentUpon>PainelPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -309,58 +322,64 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormControleUsuario\CallCenter\Cliente\CadastroCliente.resx">
+    <Compile Include="Views\UserControlHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlHome.Designer.cs">
+      <DependentUpon>UserControlHome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\FormControleUsuario\CallCenter\Cliente\CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\CallCenter\Orcamento\adicionarProduto.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\CallCenter\Orcamento\adicionarProduto.resx">
       <DependentUpon>adicionarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\CallCenter\Orcamento\atendimento.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\CallCenter\Orcamento\atendimento.resx">
       <DependentUpon>atendimento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\CallCenter\Orcamento\ConsultaPRodutos.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\CallCenter\Orcamento\ConsultaPRodutos.resx">
       <DependentUpon>ConsultaPRodutos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\CallCenter\UserControlAprovacaoComercial.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\CallCenter\UserControlAprovacaoComercial.resx">
       <DependentUpon>UserControlAprovacaoComercial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\CallCenter\UserControlClients.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\CallCenter\UserControlClients.resx">
       <DependentUpon>UserControlClients.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\CallCenter\UserControlDashboard.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\CallCenter\UserControlDashboard.resx">
       <DependentUpon>UserControlDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\CallCenter\UserControlOrcamento.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\CallCenter\UserControlOrcamento.resx">
       <DependentUpon>UserControlOrcamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\Configuracao\AlteraSenha.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\Configuracao\AlteraSenha.resx">
       <DependentUpon>AlteraSenha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\Configuracao\CadastrodeUsuario.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\Configuracao\CadastrodeUsuario.resx">
       <DependentUpon>CadastrodeUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\Configuracao\Configuracoes.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\Configuracao\Configuracoes.resx">
       <DependentUpon>Configuracoes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\EstoqueCusto\CadastroProduto.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\EstoqueCusto\CadastroProduto.resx">
       <DependentUpon>CadastroProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\EstoqueCusto\Produtos.resx">
+    <EmbeddedResource Include="Views\FormControleUsuario\EstoqueCusto\Produtos.resx">
       <DependentUpon>Produtos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormControleUsuario\PanelHome\UserControlHome.resx">
-      <DependentUpon>UserControlHome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PainelPrincipal.resx">
+    <EmbeddedResource Include="Views\PainelPrincipal.resx">
       <DependentUpon>PainelPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlHome.resx">
+      <DependentUpon>UserControlHome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Connected Services\WSCorreios\AtendeClienteService.wsdl" />
     <None Include="Connected Services\WSCorreios\ProjetoMars.WSCorreios.atualizaPagamentoNaEntregaResponse.datasource">
@@ -528,6 +547,12 @@
     <None Include="Connected Services\WSCorreios\ProjetoMars.WSCorreios.VerificaSeTodosObjetosCanceladosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.datasource" />
     <None Include="Properties\DataSources\MySql.Data.MySqlClient.Authentication.MySqlClearPasswordPlugin.datasource" />
@@ -669,10 +694,12 @@
     <None Include="Icons\icons-lua-crescente.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FormControleUsuario\Faturamento\" />
-    <Folder Include="FormControleUsuario\LivrosFiscais\" />
+    <Folder Include="Class\" />
     <Folder Include="Imagens\" />
     <Folder Include="Image\" />
+    <Folder Include="Model\" />
+    <Folder Include="Views\FormControleUsuario\Faturamento\" />
+    <Folder Include="Views\FormControleUsuario\LivrosFiscais\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
