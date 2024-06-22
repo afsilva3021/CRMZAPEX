@@ -43,9 +43,6 @@
             this.btnIncluir = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pnNavbar = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.btnNotificacao = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBusca = new System.Windows.Forms.Button();
             this.txbPesquisa = new System.Windows.Forms.TextBox();
@@ -54,7 +51,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnButons.SuspendLayout();
             this.pnNavbar.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -196,8 +192,7 @@
             // pnNavbar
             // 
             this.pnNavbar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.pnNavbar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnNavbar.Controls.Add(this.panel11);
+            this.pnNavbar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnNavbar.Controls.Add(this.label2);
             this.pnNavbar.Controls.Add(this.btnBusca);
             this.pnNavbar.Controls.Add(this.txbPesquisa);
@@ -206,46 +201,6 @@
             this.pnNavbar.Name = "pnNavbar";
             this.pnNavbar.Size = new System.Drawing.Size(1216, 46);
             this.pnNavbar.TabIndex = 9;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.lblUsuario);
-            this.panel11.Controls.Add(this.btnNotificacao);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(1027, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(185, 42);
-            this.panel11.TabIndex = 4;
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuario.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblUsuario.Location = new System.Drawing.Point(42, 2);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(54, 15);
-            this.lblUsuario.TabIndex = 1;
-            this.lblUsuario.Text = "Usuario";
-            // 
-            // btnNotificacao
-            // 
-            this.btnNotificacao.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnNotificacao.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNotificacao.FlatAppearance.BorderSize = 0;
-            this.btnNotificacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacao.Font = new System.Drawing.Font("Segoe UI Black", 9F);
-            this.btnNotificacao.ForeColor = System.Drawing.Color.White;
-            this.btnNotificacao.Image = ((System.Drawing.Image)(resources.GetObject("btnNotificacao.Image")));
-            this.btnNotificacao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotificacao.Location = new System.Drawing.Point(2, 15);
-            this.btnNotificacao.Name = "btnNotificacao";
-            this.btnNotificacao.Size = new System.Drawing.Size(157, 24);
-            this.btnNotificacao.TabIndex = 2;
-            this.btnNotificacao.Text = "Notificação";
-            this.btnNotificacao.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -297,8 +252,6 @@
             this.pnButons.ResumeLayout(false);
             this.pnNavbar.ResumeLayout(false);
             this.pnNavbar.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -315,9 +268,6 @@
         private System.Windows.Forms.Button btnIncluir;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel pnNavbar;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Button btnNotificacao;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnBusca;
         private System.Windows.Forms.TextBox txbPesquisa;

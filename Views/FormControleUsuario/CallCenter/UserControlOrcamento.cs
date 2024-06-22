@@ -26,7 +26,7 @@ namespace ProjetoMars.FormControleUsuario.CallCenter
         {
             InitializeComponent();
 
-            lblUsuario.Text = Program.UsuarioLogado;
+          
         }
 
 

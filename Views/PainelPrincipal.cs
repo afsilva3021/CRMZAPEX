@@ -63,7 +63,7 @@ namespace ProjetoMars
 
             if (showpanelLivrosFiscais)
             {
-                panelLivrosFiscais.Height = 30;
+                panelLivrosFiscais.Height = 35;
             }
             else
             {
@@ -78,6 +78,8 @@ namespace ProjetoMars
 
             tooglePanels();
             panelHome.Controls.Clear();
+            panelHome.Controls.Add(Home);
+            Home.Dock = DockStyle.Fill;
 
         }
         private void PainelPrincipal_Load(object sender, EventArgs e)
@@ -135,14 +137,6 @@ namespace ProjetoMars
 
         }
 
-        private void btnConfiguracao_Click(object sender, EventArgs e)
-        {
-           
-            panelHome.Controls.Clear();
-            panelHome.Controls.Add(Configuracoes);
-            Configuracoes.Dock = DockStyle.Fill;
-        }
-
         private void btnOrcamento_Click(object sender, EventArgs e)
         {
             
@@ -176,11 +170,11 @@ namespace ProjetoMars
         private void btnHome_Click(object sender, EventArgs e)
         {
 
-
             panelHome.Controls.Clear();
             panelHome.Controls.Add(Home);
             Home.Dock = DockStyle.Fill;
             btnHome.Refresh();
+
         }
 
         private void btnProdutos_Click(object sender, EventArgs e)
@@ -189,6 +183,13 @@ namespace ProjetoMars
             panelHome.Controls.Clear();
             panelHome.Controls.Add(Produtos);
             Produtos.Dock = DockStyle.Fill;
+        }
+
+        private void btnConfiguracao_Click_1(object sender, EventArgs e)
+        {
+            panelHome.Controls.Clear();
+            panelHome.Controls.Add(Configuracoes);
+            Configuracoes.Dock = DockStyle.Fill;
         }
     }
 }
