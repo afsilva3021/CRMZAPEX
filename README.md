@@ -4,5 +4,5 @@
 
 ### sistema está em 50% em seu desenvolvimento 
 <picture>
-    <img src="imagens/Principal.png" alt="imagem tela principal" />
+    <img src="imagens/Login.png" alt="imagem tela principal" />
 </picture>
