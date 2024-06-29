@@ -10,5 +10,5 @@
 </picture>
 <p> a dashboard do sistema ou menu principal aonde estão todas as rotinas e módulos de acesso, as principais características do sistema são seus módulos carregaram na tela sem a necessidade de clicar e na rotina e carregar uma nova janela </p>
 <picture>
-    <img src="imagens/Principal.png" alt="Dashboard do sistema ou tela principal de acesso" />
+    <img src="imagens/principal.png" alt="Dashboard do sistema ou tela principal de acesso" />
 </picture>
