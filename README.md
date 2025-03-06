@@ -173,9 +173,6 @@ Suporte a múltiplos idiomas
 Este projeto é de código aberto e está sob a licença MIT.
 
 📌 Criado por afsilva3021
-📅 Última atualização: [Data Atual]
+📅 Última atualização: 05/04/2024
 
 ---
-
-Agora vou gerar o arquivo `README.md` para download.
-
