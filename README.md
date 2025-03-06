@@ -25,7 +25,7 @@ Ele foi projetado para facilitar o gerenciamento de [clientes, vendas, atendimen
 ### **Passos para Configuração**
 1. **Clonar o Repositório**
    ```sh
-   git clone https://github.com/seu-usuario/crmzapex.git
+   git clone https://github.com/afsilva3021/crmzapex
    cd crmzapex
 
 2. Configurar o Banco de Dados
