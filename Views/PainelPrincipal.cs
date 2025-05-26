@@ -39,7 +39,7 @@ namespace ProjetoMars
             }
             else
             {
-                panelCallCenter.Visible = falar;
+                panelCallCenter.Visible = false;
             }
 
             if (showpanelEstoqueCustos)
