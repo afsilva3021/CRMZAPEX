@@ -34,12 +34,12 @@ namespace ProjetoMars
         {
             if (showpanelCallCenter)
             {
-                panelCallCenter.Height = 130;
+                panelCallCenter.Visibe = true;
 
             }
             else
             {
-                panelCallCenter.Height = 0;
+                panelCallCenter.Visible = falar;
             }
 
             if (showpanelEstoqueCustos)
